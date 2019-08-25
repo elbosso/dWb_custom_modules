@@ -5,6 +5,9 @@
  */
 package mvnmodules;
 
+import de.elbosso.util.lang.annotations.IndexedProperty;
+import de.elbosso.util.lang.annotations.Property;
+
 import java.awt.Point;
 
 /**
@@ -18,7 +21,13 @@ public class SimpleState extends de.elbosso.dataflowframework.modules.base.multi
 	private double v;
 	private double lookAt;
 	private int turndirection;
+	private int[] fundType;
+	private String[] classType;
 
+	public SimpleState()
+	{
+
+	}
 	public SimpleState(java.awt.geom.Point2D position, double v, double lookAt)
 	{
 		super();
@@ -85,5 +94,51 @@ public class SimpleState extends de.elbosso.dataflowframework.modules.base.multi
 	{
 		this.turndirection = turndirection;
 	}
-	
+
+	@IndexedProperty
+	public void setClassType(int index,String classType)
+	{
+		this.classType[index] = classType;
+	}
+
+	@IndexedProperty
+	public void setFundType(int index,int fundType)
+	{
+		this.fundType[index] = fundType;
+	}
+
+	@IndexedProperty
+	public int getFundType(int index)
+	{
+		return fundType[index];
+	}
+
+	@IndexedProperty
+	public String getClassType(int index)
+	{
+		return classType[index];
+	}
+	@IndexedProperty
+	public void setClassType(String[] classType)
+	{
+		this.classType = classType;
+	}
+
+	@IndexedProperty
+	public void setFundType(int[] fundType)
+	{
+		this.fundType = fundType;
+	}
+
+	@IndexedProperty
+	public int[] getFundType()
+	{
+		return fundType;
+	}
+
+	@IndexedProperty
+	public String[] getClassType()
+	{
+		return classType;
+	}
 }

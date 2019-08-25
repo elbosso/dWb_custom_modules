@@ -1,3 +1,4 @@
 /target/
 /.idea/
 /custom_maven_modules.iml
+/.okhttpcache/

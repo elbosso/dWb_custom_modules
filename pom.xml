@@ -6,7 +6,7 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Custom Maven Modules for dWb+</name>
-    <url>http://maven.apache.org</url>
+    <url>http://elbosso.github.io</url>
     <build>
         <pluginManagement>
             <plugins>
@@ -17,6 +17,28 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <!-- https://github.com/tomasbjerre/git-changelog-maven-plugin/blob/master/git-changelog-maven-plugin-example/pom.xml -->
+            <plugin>
+                <groupId>se.bjurr.gitchangelog</groupId>
+                <artifactId>git-changelog-maven-plugin</artifactId>
+                <version>1.60</version>
+                <executions>
+                    <execution>
+                        <id>GenerateGitChangelogTemplateFromFileAndToken</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>git-changelog</goal>
+                        </goals>
+                        <configuration>
+                            <templateFile>changelog.mustache</templateFile>
+                            <readableTagName>-([^-]+?)$</readableTagName>
+                            <file>CHANGELOG.md</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
     <properties>
         <project.custom.encoding>UTF-8</project.custom.encoding>
@@ -61,13 +83,13 @@
         <dependency>
             <groupId>de.elbosso</groupId>
             <artifactId>util_annotations</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>0.1.0-SNAPSHOT</version>
 			<scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>de.elbosso.annotation.processors</groupId>
             <artifactId>beaninfo</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>0.1.0-SNAPSHOT</version>
 			<scope>compile</scope>
         </dependency>
         <dependency>
