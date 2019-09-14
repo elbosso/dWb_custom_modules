@@ -15,9 +15,9 @@ public class NumberStateUpdaterDemo extends PopupStateUpdater
 private JLabel last;
 private JLabel current;
 private Object old;
-public NumberStateUpdaterDemo(JLabel label)
+public NumberStateUpdaterDemo(de.elbosso.ui.moduleworkspace.connected.Slot slot,javax.swing.JList list)
 {
-super(label);
+super(slot,list);
 JPanel p=new JPanel(new GridLayout(0, 2));
 JLabel l=new JLabel("letztes:");
 l.setOpaque(false);

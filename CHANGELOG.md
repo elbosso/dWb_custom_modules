@@ -21,6 +21,11 @@ Changelog of Git Changelog Maven plugin.
 
 ### No issue
 
+**added changelog**
+
+
+[390a6d792826476](https://github.com/elbosso/dWb_custom_modules/commit/390a6d792826476) EL BOSSO *2019-08-25 14:02:26*
+
 **Update README.md**
 
 
