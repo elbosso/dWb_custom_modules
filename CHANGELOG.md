@@ -24,6 +24,11 @@ Changelog of Git Changelog Maven plugin.
 **automated maven release management**
 
 
+[5ac502dd2a92d35](https://github.com/elbosso/dWb_custom_modules/commit/5ac502dd2a92d35) EL BOSSO *2020-12-23 09:20:14*
+
+**automated maven release management**
+
+
 [3c6e8d0fc9d7de7](https://github.com/elbosso/dWb_custom_modules/commit/3c6e8d0fc9d7de7) EL BOSSO *2020-12-23 09:19:43*
 
 **automated maven release management**
