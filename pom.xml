@@ -7,7 +7,7 @@
     <name>Custom Maven Modules for dWb+</name>
     <url>http://elbosso.github.io</url>
     <scm>
-        <developerConnection>scm:git:https://github.com/elbosso/custom_maven_modules.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/elbosso/dWb_custom_maven_modules.git</developerConnection>
       <tag>custom_maven_modules-1.0.0</tag>
   </scm>
 

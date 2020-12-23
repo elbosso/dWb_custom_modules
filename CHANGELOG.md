@@ -21,6 +21,11 @@ Changelog of Git Changelog Maven plugin.
 
 ### No issue
 
+**automated maven release management**
+
+
+[6a1503cdc3f33f0](https://github.com/elbosso/dWb_custom_modules/commit/6a1503cdc3f33f0) EL BOSSO *2020-12-23 09:17:56*
+
 **maven central completely blocks http now**
 
 

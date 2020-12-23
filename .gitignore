@@ -2,3 +2,5 @@
 /.idea/
 /custom_maven_modules.iml
 /.okhttpcache/
+/pom.xml.releaseBackup
+/release.properties
