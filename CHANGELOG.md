@@ -21,6 +21,17 @@ Changelog of Git Changelog Maven plugin.
 
 ### No issue
 
+**maven central completely blocks http now**
+
+
+[a0d39e3f81f9af8](https://github.com/elbosso/dWb_custom_modules/commit/a0d39e3f81f9af8) Jürgen Key *2020-01-24 17:43:03*
+
+**api changes**
+
+ * beaninfo generation now works
+
+[1ffac617cd41dd9](https://github.com/elbosso/dWb_custom_modules/commit/1ffac617cd41dd9) EL BOSSO *2019-09-14 05:49:05*
+
 **added changelog**
 
 
