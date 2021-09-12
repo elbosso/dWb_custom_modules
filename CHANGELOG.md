@@ -3,6 +3,15 @@
 Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
+### No issue
+
+**repository locations fixed**
+
+
+[b9fc85a74b12665](https://github.com/elbosso/dWb_custom_modules/commit/b9fc85a74b12665) EL BOSSO *2021-03-07 07:27:32*
+
+
+## 1.0.0
 ### GitHub #5677 
 
 **fixes #5677**
