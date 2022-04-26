@@ -103,7 +103,7 @@ public class Visualizer extends de.netsysit.dataflowframework.modules.ModuleBase
 				}
 			}
 			double sfh=(double)(scaleFactor-2)*0.5;
-			de.elbosso.algorithms.geometry.Bresenham.Worker worker=new de.elbosso.algorithms.geometry.Bresenham.Worker()
+			de.elbosso.algorithms.math2d.Bresenham.Worker worker=new de.elbosso.algorithms.math2d.Bresenham.Worker()
 			{
 				public boolean doWork(java.awt.Point point)
 				{
@@ -123,7 +123,7 @@ public class Visualizer extends de.netsysit.dataflowframework.modules.ModuleBase
 				g2.transform(transform);
 				g2.drawLine((int)(p.getX()*scaleFactor),(int)(p.getY()*scaleFactor),(int)(p.getX()*scaleFactor+scaleFactor), (int)(p.getY()*scaleFactor));
 				g2.setTransform(latch);
-				de.elbosso.algorithms.geometry.Bresenham bresenham=new de.elbosso.algorithms.geometry.Bresenham(1,worker);
+				de.elbosso.algorithms.math2d.Bresenham bresenham=new de.elbosso.algorithms.math2d.Bresenham(1,worker);
 				java.awt.geom.Point2D target=new java.awt.geom.Point2D.Double(p.getX()+len*java.lang.Math.cos(state.getLookAt()),p.getY()+len*java.lang.Math.sin(state.getLookAt()));
 				if(isDisplayFrontSensor())
 				{

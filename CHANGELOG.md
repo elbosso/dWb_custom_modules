@@ -5,6 +5,11 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
+**change of repository location for de.elbosso artifacts**
+
+
+[7f639fb36ab00a7](https://github.com/elbosso/dWb_custom_modules/commit/7f639fb36ab00a7) EL BOSSO *2021-09-12 09:04:58*
+
 **repository locations fixed**
 
 

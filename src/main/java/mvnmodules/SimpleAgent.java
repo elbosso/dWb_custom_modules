@@ -22,7 +22,7 @@ public class SimpleAgent extends de.elbosso.dataflowframework.modules.base.multi
 	}
 	public synchronized void updateState(final SimpleEnvironment environment, final SimpleState[] states,final int selfIndex)
 	{
-		de.elbosso.algorithms.geometry.Bresenham.Worker obsworker=new de.elbosso.algorithms.geometry.Bresenham.Worker()
+		de.elbosso.algorithms.math2d.Bresenham.Worker obsworker=new de.elbosso.algorithms.math2d.Bresenham.Worker()
 		{
 			public boolean doWork(java.awt.Point point)
 			{
@@ -35,7 +35,7 @@ public class SimpleAgent extends de.elbosso.dataflowframework.modules.base.multi
 				return stopIt;
 			}
 		};
-		de.elbosso.algorithms.geometry.Bresenham.Worker agworker=new de.elbosso.algorithms.geometry.Bresenham.Worker()
+		de.elbosso.algorithms.math2d.Bresenham.Worker agworker=new de.elbosso.algorithms.math2d.Bresenham.Worker()
 		{
 			public boolean doWork(java.awt.Point point)
 			{
@@ -57,7 +57,7 @@ public class SimpleAgent extends de.elbosso.dataflowframework.modules.base.multi
 			}
 		};
 		double len=java.lang.Math.sqrt(environment.getDimension().width*environment.getDimension().width+environment.getDimension().height*environment.getDimension().height);
-		de.elbosso.algorithms.geometry.Bresenham bresenham=new de.elbosso.algorithms.geometry.Bresenham(1,obsworker);
+		de.elbosso.algorithms.math2d.Bresenham bresenham=new de.elbosso.algorithms.math2d.Bresenham(1,obsworker);
 		double mindist=java.lang.Double.MAX_VALUE;
 		double la=state.getLookAt()-populationConfiguration.getAdditionalSensorCount()/2*populationConfiguration.getSensorSpacing();
 		double directionOfNearestObstacle=state.getLookAt();
@@ -79,7 +79,7 @@ public class SimpleAgent extends de.elbosso.dataflowframework.modules.base.multi
 			la+=populationConfiguration.getSensorSpacing();
 		}
 		la=state.getLookAt()-populationConfiguration.getAdditionalSensorCount()/2*populationConfiguration.getSensorSpacing();
-		bresenham=new de.elbosso.algorithms.geometry.Bresenham(1,agworker);
+		bresenham=new de.elbosso.algorithms.math2d.Bresenham(1,agworker);
 		double directionOfNearestAgent=state.getLookAt();
 		double minagdist=java.lang.Double.MAX_VALUE;
 //		for(int i=0;i<=additionalSensorCount;++i)
