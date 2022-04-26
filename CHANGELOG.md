@@ -8,7 +8,35 @@ Changelog of Git Changelog Maven plugin.
 **re #2**
 
 
-[cb178a970ffba40](https://github.com/elbosso/dWb_custom_modules/commit/cb178a970ffba40) EL BOSSO *2022-04-26 05:00:20*
+[aa041b02defaa4c](https://github.com/elbosso/dWb_custom_modules/commit/aa041b02defaa4c) EL BOSSO *2022-04-26 15:24:14*
+
+**fixes #2**
+
+
+[d31eca6ef111a12](https://github.com/elbosso/dWb_custom_modules/commit/d31eca6ef111a12) EL BOSSO *2022-04-26 05:01:45*
+
+**re #2**
+
+
+[2c6269f2fabdaf0](https://github.com/elbosso/dWb_custom_modules/commit/2c6269f2fabdaf0) EL BOSSO *2022-04-26 05:01:30*
+
+
+### Jira beta-1 
+
+**Bump protobuf-java from 3.0.0-beta-1 to 3.16.1**
+
+ * Bumps [protobuf-java](https://github.com/protocolbuffers/protobuf) from 3.0.0-beta-1 to 3.16.1.
+ * - [Release notes](https://github.com/protocolbuffers/protobuf/releases)
+ * - [Changelog](https://github.com/protocolbuffers/protobuf/blob/master/generate_changelog.py)
+ * - [Commits](https://github.com/protocolbuffers/protobuf/compare/v3.0.0-beta-1...v3.16.1)
+ * ---
+ * updated-dependencies:
+ * - dependency-name: com.google.protobuf:protobuf-java
+ * dependency-type: direct:production
+ * ...
+ * Signed-off-by: dependabot[bot] &lt;support@github.com&gt;
+
+[27b6c664a862348](https://github.com/elbosso/dWb_custom_modules/commit/27b6c664a862348) dependabot[bot] *2022-01-07 22:34:31*
 
 
 ### No issue
