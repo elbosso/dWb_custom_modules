@@ -8,6 +8,15 @@ Changelog of Git Changelog Maven plugin.
 **re #2**
 
 
+[7fd34baf618d78d](https://github.com/elbosso/dWb_custom_modules/commit/7fd34baf618d78d) EL BOSSO *2022-04-26 15:25:04*
+
+
+## 1.1.0
+### GitHub [#2](https://github.com/elbosso/dWb_custom_modules/issues/2) get rid of log4j and use the new bom dependenc
+
+**re #2**
+
+
 [aa041b02defaa4c](https://github.com/elbosso/dWb_custom_modules/commit/aa041b02defaa4c) EL BOSSO *2022-04-26 15:24:14*
 
 **fixes #2**
